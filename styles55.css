@@ -1,0 +1,47 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #a23c3c;
+    color: rgb(163, 215, 80);
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+section {
+    margin: 1em 0;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        flex: 1;
+        margin: 0 1em;
+    }
+}
+
+@media (min-width: 900px) {
+    header, footer {
+        text-align: left;
+        padding: 1em 2em;
+    }
+
+    main {
+        padding: 2em;
+    }
+}
